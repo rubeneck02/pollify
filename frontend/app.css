@@ -1,0 +1,382 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #213547;
+}
+
+.material-icons{
+    cursor: pointer;
+    color: red;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background-color: #5F0F40;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h2{
+    color: #5F0F40;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #FB8B24;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main{
+  width: 100%;
+  margin: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+
+}
+
+/* login */
+.login-screen{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #F5F7F8;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+/* poll list */
+.poll-list{
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: #F5F7F8;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+
+.poll{
+    padding: 0 10px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    background-color: #E36414;
+    color: white;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: start;
+    width: 73%;
+}
+
+.see-votes-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.poll:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+
+}
+
+.poll-list button{
+    margin-bottom: 15px;
+    background-color: #cfff42;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.top p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.answers{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+.answer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.answer input{
+    margin-left: 0;
+}
+
+.left{
+    width: 10%;
+}
+.left input{
+    background-color: gray;
+
+}
+.right{
+    text-overflow: ellipsis;
+    width: 90%;
+}
+
+.right .text-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.right .text-container .answer-text{
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width:60%;
+}
+
+.right .text-container .answer-text label{
+    display: inline-block;
+    text-overflow: ellipsis;
+    display: flex;
+}
+
+.right .text-container .votes-text{
+    overflow: hidden;
+    width:40%;
+    text-align: right;
+}
+
+.right .bar{
+    background-color: #5F0F40;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.polls{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    align-items: center;
+    overflow-y: scroll;
+}
+  div.modalBg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.modal {
+    width: 40%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 10px 20px black;
+  }
+
+  div.modal button{
+    background-color: #FB8B24;
+  }
+
+  .question-container{
+    padding-bottom: 10px;
+    /* border-bottom: 2px solid #5F0F40; */
+  }
+
+  .answer-container{
+    padding-top: 10px;
+    border: 2px solid #5F0F40;
+    border-radius: 20px;
+
+  }
+  .answer-container button{
+    background-color: #E36414 !important;
+  }
+  section.card {
+    border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.05);
+    margin-top: 20px;
+    border: 1px solid #eee;
+    padding: 15px;
+  }
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #FB8B24;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 10px;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input[type=text]{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 5px;
+  width: 80%;
+}
+
+.question-container .answer-text p{
+    color: #FB8B24;  
+} 
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color: white;
+        background-color: #ffffff;
+    }
+
+    body{
+        background-color: #121212;
+    }
+
+    .login-screen{
+        background-color: #1F1B24;
+    }
+
+    .poll-list{
+        background-color: #1F1B24;
+    }
+
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #F4CE14;
+    }
+  
+    h2{
+        color: white;
+    }
+    
+    p{
+        color: white;
+    }
+
+    label{
+        color: white;
+    }
+
+    .poll{
+        background-color: #2e2935;
+    }
+
+    div.modal {
+        background-color: #1F1B24;
+    }
+    
+    .right .bar{
+        background-color: #FB8B24;
+    }
+
+    .poll button{
+        background-color: #E36414 !important;
+    }
+    .question-container{
+        color: white;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /* Your styles go here */
+    #app{
+        width: 90%;
+    }
+    .poll-list{
+        height: 65%;
+    }
+    div.modal {
+        width: 73%;
+    }
+
+}
+
+@media screen and (max-height: 700px) {
+    /* Your styles go here */
+    .polls{
+        height: 60%;
+    }
+
+}

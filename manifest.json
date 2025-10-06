@@ -1,0 +1,43 @@
+{
+    "name": "Pollify",
+    "short_name": "Poll",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/frontend/assets/icons/poll-32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/frontend/assets/icons/poll-64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },        {
+            "src": "/frontend/assets/icons/poll-128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/frontend/assets/icons/poll-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/frontend/assets/icons/poll-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/frontend/assets/icons/poll-384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "/frontend/assets/icons/poll-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
